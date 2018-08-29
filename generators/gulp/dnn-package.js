@@ -27,6 +27,8 @@ gulp.task('packageInstall', ['build'], function() {
         '**/*.svg',
         '!/**/web.config',
         '!/**/gulpfile.js',
+        '!/**/{_BuildScripts,_BuildScripts/**}',
+        '!/**/{_Packages,_Packages/**}',
         '!/**/{bin,bin/**}',
         '!/**/{obj,obj/**}',
         '!/**/{packages,packages/**}',
